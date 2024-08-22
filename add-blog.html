@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaugă Articol</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-Q5BST2S8HZ');
+  </script>
+
+<style>
+
+   
+</style>
+<body>
+
+    <div class="logout container mt-5">  
+
+        <form action="out.php" method="post">
+            <button type="submit" class="btn btn-danger">Închide</button>
+        </form>
+         </div>
+        
+    <div class="container mt-5">
+        <h2>Adaugă Articol</h2>
+        <form method="POST" action=" " enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="slug">Slug</label>
+                <input type="text" class="form-control" id="slug" name="slug" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Titlu</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descriere</label>
+                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="og_title">OG Title</label>
+                <input type="text" class="form-control" id="og_title" name="og_title">
+            </div>
+            <div class="form-group">
+                <label for="img">Imagine</label>
+                <input type="file" class="form-control-file" id="img" name="img">
+            </div>
+            <div class="form-group">
+                <label for="category">Categorie</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="category" id="curiozitati" value="Curiozități" required>
+                    <label class="form-check-label" for="curiozitati">Curiozități</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="category" id="tehnic" value="Tehnic" required>
+                    <label class="form-check-label" for="tehnic">Tehnic</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="h1">Titlu Principal (H1)</label>
+                <input type="text" class="form-control" id="h1" name="h1">
+            </div>
+            <div class="form-group">
+                <label for="text">Conținut</label>
+                <textarea class="form-control" id="text" name="text" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Adaugă Articol</button>
+        </form>
+    </div>
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

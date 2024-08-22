@@ -1,0 +1,393 @@
+ 
+ 
+
+
+ <!doctype html>
+ <html lang="ro" data-bs-theme="light">
+   <head><script src="../assets/js/color-modes.js"></script>
+ 
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+     <link rel="stylesheet" href="custom.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+ <!-- Isotope JS -->
+ <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+ 
+ <!-- Glightbox JS -->
+ <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.9/dist/js/glightbox.min.js"></script>
+ 
+ <!-- Glightbox CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/glightbox@3.0.9/dist/css/glightbox.min.css" rel="stylesheet">
+ 
+  
+     <!-- Main CSS File -->
+     <link href="assets/css/main.css" rel="stylesheet">
+ 
+     <title>Portofolio🌟 - Exemple de website </title>
+     <link rel="canonical" href="https://ionnelli.me/portfolio">
+          <meta name="description" content="Alege o agenție cu experiență bogată pentru a dezvolta siteul tău. Vezi exemple de website, magazine online și landing page.">
+     
+         <meta name="author" content="Ioneli Development SRL">
+         
+          <meta name="robots" content="index, follow">
+          <meta property="og:title" content="Exemple de Website! ">
+         <meta property="og:description" content="  Experiența noastră. Modele de website și rezultate garantate.">
+         <meta property="og:image" content="https://ionnelli.me/img/web-hosting.png">
+         <meta property="og:url" content="https://ionnelli.me/portfolio">
+         <link rel="icon" href="https://ionnelli.me/code.ico" type="image/x-icon">
+     
+     
+         <script async src="https://www.googletagmanager.com/gtag/js?id=  G-404513234"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+     
+           gtag('config', '  G-404513234');
+         </script>
+     
+     
+  
+     
+ 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+ 
+ <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+   <body>
+     <div id="headerContainer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+        <div id="lightThemeAlert" class="alert alert-warning alert-light-theme" role="alert" style="display: none;">
+          Pentru o experiență mai bună, activați versiunea luminoasă a website-ului.
+          <button id="activateLightTheme" type="button" class="btn btn-light" aria-pressed="false">
+              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+              Activează
+          </button>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              // Verifică dacă tema este 'dark'
+              if (document.documentElement.getAttribute('data-bs-theme') === 'dark') {
+                  document.getElementById('lightThemeAlert').style.display = 'block';
+              }
+        
+              document.getElementById('activateLightTheme').addEventListener('click', function() {
+                  // Ascunde alertul
+                  document.getElementById('lightThemeAlert').style.display = 'none';
+                  // Optional: poți schimba efectiv tema aici, dacă e nevoie
+                  document.documentElement.setAttribute('data-bs-theme', 'light');
+              });
+          });
+        </script>
+        
+     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+       <symbol id="check2" viewBox="0 0 16 16">
+         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+       </symbol>
+       <symbol id="circle-half" viewBox="0 0 16 16">
+         <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+       </symbol>
+       <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+         <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+       </symbol>
+       <symbol id="sun-fill" viewBox="0 0 16 16">
+         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+       </symbol>
+     </svg>
+ 
+     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+               id="bd-theme"
+               type="button"
+               aria-expanded="false"
+               data-bs-toggle="dropdown"
+               aria-label="Toggle theme (auto)">
+         <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+         <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+       </button>
+       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+         <li>
+           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+             <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+             Light
+             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+           </button>
+         </li>
+         <li>
+           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+             <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+             Dark
+             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+           </button>
+         </li>
+         <li>
+           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+             <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+             Auto
+             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+           </button>
+         </li>
+       </ul>
+     </div>
+ 
+ 
+     <script>
+       function loadHeader() {
+           var xhr = new XMLHttpRequest();
+           xhr.open('GET', 'header.html', true);
+           xhr.onload = function() {
+               if (this.status == 200) {
+                   document.getElementById('header-placeholder').innerHTML = this.responseText;
+               } else {
+                   console.error('Error loading header: ' + this.status);
+               }
+           }
+           xhr.onerror = function() {
+               console.error('Request failed');
+           }
+           xhr.send();
+       }
+       window.onload = loadHeader;
+   </script>
+ 
+     
+     
+     
+ 
+  <!-- Favicons -->
+ 
+
+ 
+ 
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    
+       <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+     </a>
+
+  
+
+  
+  </header>
+
+ 
+  
+  
+ 
+
+ 
+   
+<section id="portfolio" class="portfolio  ">
+
+    <!-- Section Title -->
+    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+      <h2>Experiența noastră</h2>
+      <p>Pe parcursul experienței noastre, am avut ocazia să lucrăm la o gamă variată de proiecte, care au inclus atât dezvoltarea și reprezentarea brandurilor, cât și crearea de magazine online și implementarea strategiilor de optimizare SEO. Fiecare proiect a fost abordat cu dedicare și atenție la detalii, asigurându-ne că nevoile fiecărui client sunt pe deplin satisfăcute. Suntem mândri să afirmăm că feedback-ul clienților noștri a fost mereu pozitiv, aceștia exprimându-și aprecierea față de profesionalismul și eficiența serviciilor pe care le oferim.</p>
+     </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">Toate</li>
+          <li data-filter=".seo">Seo</li>
+          <li data-filter=".ecommerce">Magazin Online</li>
+          <li data-filter=".reprezentare">Reprezentare</li>
+          <li data-filter=".rezervare"> Rezervare</li>
+        </ul><!-- End Portfolio Filters -->
+
+        <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 4932px;">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item seo ecommerce " style="position: absolute; left: 0px; top: 0px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/vmob-ecommerce.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Vmob.md</h4>
+                <p>Magazin Online destinat vânzării de mobilă</p>
+                <a href="/img/vmob-ecommerce.png" title="Vmob" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item seo ecommerce" style="position: absolute; left: 0px; top: 411px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/offroad-parts-seo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Offroad.parts</h4>
+                <p>Optimizare Seo pentru site ecommerce</p>
+                <a href="/img/offroad-parts-seo.png" title="Offroad.Parts" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item ecommerce" style="position: absolute; left: 0px; top: 822px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/acoperis-sigur-site.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Acoperissigur.md</h4>
+                <p>Site destinat pentru vânzarea articole de construcție</p>
+                <a href="/img/acoperis-sigur-site.png" title="Acoperis Sigur" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item rezervare" style="position: absolute; left: 0px; top: 1233px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/psiholog-elena-site.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Psiholog-elena.md</h4>
+                <p>Site destinat programărilor la consultații</p>
+                <a href="/img/psiholog-elena-site.png" title="Psiholog Elena" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+         
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item reprezentare" style="position: absolute; left: 0px; top: 2055px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/ecostone-uk-site.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ecostone.uk.com</h4>
+                <p>Site portofoliu pentru lucrari de renovare</p>
+                <a href="/img/ecostone-uk-site.png" title="Ecostone" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item seo" style="position: absolute; left: 0px; top: 2466px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/iacob-studio-seo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Iacobstudio.com</h4>
+                <p>Optimizare Seo pentru site portofoliu fotograf</p>
+                <a href="/img/iacob-studio-seo.png" title="Iacob Studio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item reprezentare" style="position: absolute; left: 0px; top: 2877px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/fast-ceiling-site.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fast-ceiling.ie</h4>
+                <p>Site de prezentare pentru companie de construcții și data center</p>
+                <a href="/img/fast-ceiling-site.png" title="Fast Ceiling" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item seo" style="position: absolute; left: 0px; top: 3288px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/miadora-seo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Miadora.md</h4>
+                <p>Optimizare Seo pentru site-ul unui restaurant de nunți și evenimente</p>
+                <a href="/img/miadora-seo.png" title="Miadora" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item reprezentare" style="position: absolute; left: 0px; top: 3699px;">
+            <div class="portfolio-content h-100">
+              <img src="/img/masterplitka-site.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Masterplitka.md</h4>
+                <p>Dezvoltare site pentru firma de renovări Moldova</p>
+                <a href="/img/masterplitka-site.png" title="Masterplitka" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item ecommerce" style="position: absolute; left: 0px; top: 1644px;">
+            <div class="portfolio-content h-100">
+              <img src="" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Navomodele-apee.md</h4>
+                <p>Magazin online pentru comercializare navomodele</p>
+                <a href="/img/navomodele-apee-site.png" title="Navomodele " data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item rezervare" style="position: absolute; left: 0px; top: 1644px;">
+            <div class="portfolio-content h-100">
+              <img src="" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cuptorul de casa</h4>
+                <p>Magazin online pentru comercializare navomodele</p>
+                <a href="/img/cuptorul-de-casa-site.png" title="Cuptorul de Casă   " data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="/contact " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>  
+
+
+         
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </div>
+
+    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Crează primul pas și pentru dezvoltarea site-ului tău !</h2>
+        <a class="btn btn-lg btn-primary" href="#">Contactează acum</a>
+
+
+</section>
+
+ 
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" style="display: none !important;" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+ 
+  <!-- Vendor JS Files -->
+   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <iframe id="footer-frame" src="footer.html"></iframe>
+
+</body>
+
+</html>
+ 

@@ -1,0 +1,208 @@
+
+
+
+<!doctype html>
+<html lang="ro" data-bs-theme="light">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <link rel="stylesheet" href="custom.css">
+    <title>Mentenanță Website⚙️ - Toate Tipurile de site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+    <link rel="canonical" href="https://ionnelli.me/mentenanta-website">
+     <meta name="description" content=" Ai nevoie de administrator website? Oferim menetnanță pentru websiteul tău. Vezi beneficiile mentenanței pentru website">
+
+    <meta name="author" content="Ioneli Development SRL">
+    
+     <meta name="robots" content="index, follow">
+     <meta property="og:title" content="Putem avea grijă de site-ul tău ! ">
+    <meta property="og:description" content=" Solicită siguranța website-ului tău. Alege un pachet de mentenanță și vei fi deservit la cel mai înalt nivel.">
+    <meta property="og:image" content=" https://ionnelli.me/img/mentenanta-site.gif">
+    <meta property="og:url" content="https://ionnelli.me/mentenanta-site">
+    <link rel="icon" href="https://ionnelli.me/code.ico" type="image/x-icon">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id= G-404513234"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', ' G-404513234');
+    </script>
+
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<body>
+     
+
+    <div id="headerContainer" ></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <div id="lightThemeAlert" class="alert alert-warning alert-light-theme" role="alert" style="display: none;">
+        Pentru o experiență mai bună, activați versiunea luminoasă a website-ului.
+        <button id="activateLightTheme" type="button" class="btn btn-light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Activează
+        </button>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verifică dacă tema este 'dark'
+            if (document.documentElement.getAttribute('data-bs-theme') === 'dark') {
+                document.getElementById('lightThemeAlert').style.display = 'block';
+            }
+      
+            document.getElementById('activateLightTheme').addEventListener('click', function() {
+                // Ascunde alertul
+                document.getElementById('lightThemeAlert').style.display = 'none';
+                // Optional: poți schimba efectiv tema aici, dacă e nevoie
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+            });
+        });
+      </script>
+      
+  <section id="hero" class="hero section">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" class="aos-init aos-animate">Cine are grijă de  <span class="text-body-secondary">site-ul </span> tău?</h1>
+          <p data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate"> Asigură-te că prezența ta online rămâne impecabilă și fără probleme tehnice </p>
+          <div class="d-flex flex-column flex-md-row aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <a class="btn btn-lg btn-primary" href="/contact">Contactează acum</a>
+             <a href="/creare-website" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0 color-violet"> <i class="bi bi-browser-edge"></i><span>Creare Website</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out">
+          <img src=" /img/mentenanta-site.gif" class="img-fluid animated" alt="">
+        </div>
+      </div>
+     </div>
+
+  </section>
+  
+<section class="section services-section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title">
+                    <h1>Mentenanță Website</h1>
+                    <p>  Suntem aici să ne ocupăm de toate detaliile, astfel încât tu să te poți concentra pe ceea ce contează cu adevărat – afacerea ta.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-shield-exclamation"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5> Actualizări de Securitate</h5>
+                        <p> Asigurăm protecția site-ului tău împotriva vulnerabilităților cibernetice, aplicând cele mai recente patch-uri și actualizări de securitate..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-clipboard2-pulse"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5> Monitorizare </h5>
+                        <p> Monitorizăm constant funcționalitatea site-ului pentru a detecta și rezolva prompt orice problemă tehnică sau încercare de hacking..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-database-fill-check"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5> Optimizare Performantă</h5>
+                        <p> Verificăm și îmbunătățim viteza de încărcare a paginilor, oferind utilizatorilor tăi o experiență rapidă și fără întreruperi..</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / --><div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-card-heading"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5>Actualizări de Conținut</h5>
+                        <p> Menținem site-ul tău relevant și actualizat prin modificări periodice de conținut, inclusiv texte, imagini și alte materiale multimedia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-database-fill-down"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5> Backup-uri Periodice</h5>
+                        <p> Realizăm backup-uri regulate ale site-ului, pentru a ne asigura că poți recupera rapid orice date în caz de probleme.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <!-- feaure box -->
+            
+            <!-- / -->
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="bi bi-person-rolodex"></i>
+                     </div>
+                    <div class="feature-content">
+                        <h5> Promovare Google Ads</h5>
+                        <p> Creștem vizibilitatea și traficul site-ului tău prin campanii eficiente de Google Ads, optimizate pentru a atrage clienții potriviți .</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+        </div>
+    </div>
+</section>
+
+<iframe id="footer-frame" src="footer.html"></iframe>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
